@@ -3,23 +3,33 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/api/joke.ts";
-import * as $1 from "./routes/api/nice/[id].tsx";
-import * as $2 from "./routes/api/nice/index.tsx";
-import * as $3 from "./routes/edit/[edit].tsx";
-import * as $4 from "./routes/index.tsx";
+import * as $0 from "./routes/addnewdata/addnew.tsx";
+import * as $1 from "./routes/api/joke.ts";
+import * as $2 from "./routes/api/nice/[id].tsx";
+import * as $3 from "./routes/api/nice/index.tsx";
+import * as $4 from "./routes/delete/[deleteid].tsx";
+import * as $5 from "./routes/edit/[edit].tsx";
+import * as $6 from "./routes/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
+import * as $$1 from "./islands/DeleteForm.tsx";
+import * as $$2 from "./islands/Editform.tsx";
+import * as $$3 from "./islands/addform.tsx";
 
 const manifest = {
   routes: {
-    "./routes/api/joke.ts": $0,
-    "./routes/api/nice/[id].tsx": $1,
-    "./routes/api/nice/index.tsx": $2,
-    "./routes/edit/[edit].tsx": $3,
-    "./routes/index.tsx": $4,
+    "./routes/addnewdata/addnew.tsx": $0,
+    "./routes/api/joke.ts": $1,
+    "./routes/api/nice/[id].tsx": $2,
+    "./routes/api/nice/index.tsx": $3,
+    "./routes/delete/[deleteid].tsx": $4,
+    "./routes/edit/[edit].tsx": $5,
+    "./routes/index.tsx": $6,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
+    "./islands/DeleteForm.tsx": $$1,
+    "./islands/Editform.tsx": $$2,
+    "./islands/addform.tsx": $$3,
   },
   baseUrl: import.meta.url,
   config,
